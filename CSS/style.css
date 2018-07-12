@@ -1,0 +1,21 @@
+body {
+    background: url("http://www.wildtextures.com/wp-content/uploads/DSC04170-1280x853.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1 {
+    color: #f7ebcd;
+}
+
+#secondh1 {
+    border-width: 1px;
+    border-style: dashed;
+    border-color: darkorange;
+}
+
+#thirdh1 {
+    border: 1px dashed darkorange;
+}
+li {
+    color: #f7ebcd;
+}

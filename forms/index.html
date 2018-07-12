@@ -1,0 +1,92 @@
+<!-- radio button -->
+<!-- select tag -->
+<!-- textarea tag -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+</head>
+
+<body>
+    <h1>Register</h1>
+    <form action="http://www.wikipedia.org" method="get">
+            <label for="firstName">First Name:</label>
+            <input name="first" id="firstName" type="text" placeholder="John" required>
+            <label for="lastName">Last Name</label>
+            <input name="last" id="lastName" type="text" placeholder="Smith" required>
+        <div>
+            <label for="male">Male</label>
+            <input name="gender" value="male" id="male" type="radio" required>
+            <label for="female">Female</label>
+            <input name="gender" value="female" id="female" type="radio">
+            <label for="other">Other</label>
+            <input name="gender" value="other" id="other" type="radio">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" placeholder="your email" required>
+            <label for="pass">Password:</label>
+            <!--<input id="pass" type="password" name="password" placeholder="your password" minlength="5" maxlength="10" required>-->
+            <input type="password" id="pass" name="password" placeholder="your password" pattern=".{5,10}" required title="5 to 10 characters">
+        </div>
+        <div>
+            <label>
+                Birthday:
+                <select name="month"  required>
+                    <option value="jan">Jan</option>
+                    <option value="feb">Feb</option>
+                    <option value="mar">Mar</option>
+                    <option value="apr">Apr</option>
+                    <option value="may">May</option>
+                    <option value="jun">Jun</option>
+                    <option value="jul">Jul</option>
+                    <option value="aug">Aug</option>
+                    <option value="sep">Sep</option>
+                    <option value="nov">Nov</option>
+                    <option value="dec">Dec</option>
+                    <option value="none" selected>Month</option>
+                </select>
+                <select name="day" required>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="none" selected>Day</option>
+                </select>
+                <select name="year" required>
+                    <option value="1994">1994</option>
+                    <option value="1993">1993</option>
+                    <option value="1992">1992</option>
+                    <option value="1991">1991</option>
+                    <option value="1990">1990</option>
+                    <option value="1989">1989</option>
+                    <option value="1988">1988</option>
+                    <option value="1987">1987</option>
+                    <option value="1986">1986</option>
+                    <option value="1985">1985</option>
+                    <option value="none" selected>Year</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <label for="agree">I agree to the terms and conditions</label>
+            <input name="agree" type="checkbox" id="agree" required>
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+    <form action="">
+
+    </form>
+</body>
+
+</html>
