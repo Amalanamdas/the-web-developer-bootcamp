@@ -1,0 +1,37 @@
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+
+}
+#main-menu {
+  text-align: center;
+  clear: both !important;
+  display: inline-block;
+}
+.header {
+  background-color: #4c4b4b;
+}
+#main-menu {
+  background: none;
+  display: inline-block;
+  text-align: initial;
+  list-style: none outside none;
+}
+
+.header-top-inner {
+  position: relative;
+
+}
