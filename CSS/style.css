@@ -3,6 +3,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 h1 {
     color: #f7ebcd;
 }
@@ -16,6 +17,15 @@ h1 {
 #thirdh1 {
     border: 1px dashed darkorange;
 }
+
 li {
     color: #f7ebcd;
+}
+
+p {
+    color: antiquewhite
+}
+
+p ~ ol {
+    border: 2px solid red
 }

@@ -1,0 +1,45 @@
+
+/*font family*/
+body {
+  background: antiquewhite;
+  font-size: 16px;
+}
+p {
+  font-size: 1.5em;
+}
+
+h1 {
+  font-family: 'Indie Flower', cursive;
+
+}
+/*font size*/
+h1 {
+  font-size: 45px;
+}
+
+span {
+  font-size: 2.0em;
+}
+/*font-weight*/
+body {
+  font-weight: bold;
+}
+
+/*line-height*/
+p {
+  font-family: 'Lobster', cursive;
+}
+/*text-align*/
+h1 {
+  text-align: center;
+}
+p {
+  text-align: justify;
+}
+/*text-decoration*/
+/*h1 {*/
+  /*text-decoration: line-through;*/
+/*}*/
+/*p {*/
+  /*text-decoration: underline;*/
+/*}*/
