@@ -1,0 +1,15 @@
+.pink {
+  background: pink;
+  border: 1px solid purple;
+  text-align: center;
+}
+.green {
+  background: greenyellow;
+  border: 1px solid green;
+  text-align: center;
+}
+.blue {
+  background: cornflowerblue;
+  border: 1px solid darkslateblue;
+  text-align: center;
+}
