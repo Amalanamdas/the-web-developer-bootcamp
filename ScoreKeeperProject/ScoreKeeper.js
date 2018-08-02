@@ -1,22 +1,1 @@
-var p1Score = 0;
-var p2Score = 0;
-var gameOver = false;
-var winningScore = 5;
-var p1Button = document.querySelector('#p1');
-var p2Button = document.querySelector('#p2');
-var resetButton = document.querySelector('#res');
-var numInput = document.querySelector('input');
-var p1DisplayScore = document.querySelector('#p1Display');
-var p2DisplayScore = document.querySelector('#p2Display');
-
-p1Button.addEventListener('click', function () {
-    if (!gameOver) {
-        p1Score++;
-        if (p1Score === winningScore) {
-            p1DisplayScore.classList.add('winner');
-            gameOver = true;
-        }
-        p1DisplayScore.textContent = p1Score;
-    }
-});
-
+/**This project must be refactored.1. Add Bootstrap to the html2. Refactor js code to make it more short and readable3. Maybe add some animation**/var p1Score = 0;var p2Score = 0;var gameOver = false;var winningScore = 5;var p1Button = document.querySelector('#p1');var p2Button = document.querySelector('#p2');var resetButton = document.querySelector('#res');var numInput = document.querySelector('input');var p1DisplayScore = document.querySelector('#p1Display');var p2DisplayScore = document.querySelector('#p2Display');var winningScoreDisp = document.querySelector('p span');p1Button.addEventListener('click', function () {    if (!gameOver) {        p1Score++;        if (p1Score === winningScore) {            p1DisplayScore.classList.add('winner');            gameOver = true;            p1Button.disabled = true;            p2Button.disabled = true;            numInput.disabled = true;        }        p1DisplayScore.textContent = p1Score;    }});p2Button.addEventListener('click', function () {    if (!gameOver) {        p2Score++;        if (p2Score === winningScore) {            p2DisplayScore.classList.add('winner');            gameOver = true;            p1Button.disabled = true;            p2Button.disabled = true;            numInput.disabled = true;        }        p2DisplayScore.textContent = p2Score;    }});numInput.addEventListener('change', function () {    reset();    winningScoreDisp.textContent = Number(this.value);    winningScore = Number(this.value);});function reset() {    p1Score = 0;    p2Score = 0;    winningScore = 5;    winningScoreDisp.textContent = winningScore;    p1DisplayScore.textContent = p1Score;    p2DisplayScore.textContent = p2Score;    gameOver = false;    p1DisplayScore.classList.remove('winner');    p2DisplayScore.classList.remove('winner');}resetButton.addEventListener('click', function () {    reset();    if (numInput.value !== '') {        numInput.value = '';    }    p2Button.disabled = false;    numInput.disabled = false;    p1Button.disabled = false;});
