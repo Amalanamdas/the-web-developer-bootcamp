@@ -5,13 +5,23 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link rel="stylesheet" href="colorGame.css">
     <title>Color Game</title>
 </head>
 <body>
-<h1> The <span id="colorDisplay"></span> Color Game</h1>
-<div>
+<h1>
+    The Great
+    <br>
+    <span id="colorDisplay"></span>
+    <br>
+    Color Game
+</h1>
+<div id="stripe">
+    <button id="reset"> New Colors</button>
     <span id="message"></span>
+    <button id="easyBtn">Easy</button>
+    <button id="heardBtn" class="selected">Heard</button>
 </div>
 
 <div id="container">
@@ -22,7 +32,6 @@
     <div class="square"></div>
     <div class="square"></div>
 </div>
-
 
 <script type="application/javascript" src="colorGame.js"></script>
 </body>
