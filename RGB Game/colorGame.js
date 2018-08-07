@@ -1,15 +1,12 @@
-// Globals
-let numSquares = 6;
-let colors = [];
-let pickedColor;
-
-// DOM Elements
-const squares = $('.square');
-const pickedDispColor = $('#colorDisplay');
-const messageDisplay = $('#message');
-const h1 = $('h1');
-const resetButton = $('#reset');
-const modeButtons = document.querySelectorAll('.mode');
+var numSquares = 6;
+var colors = [];
+var pickedColor;
+var squares = document.querySelectorAll('.square');
+var pickedDispColor = document.querySelector('#colorDisplay');
+var messageDisplay = document.querySelector('#message');
+var h1 = document.querySelector('h1');
+var resetButton = document.querySelector('#reset');
+var modeButtons = document.querySelectorAll('.mode');
 
 init()
 
